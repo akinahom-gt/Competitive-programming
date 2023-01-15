@@ -19,5 +19,4 @@ class Solution(object):
         return answer
         
         
-Footer
-© 2022 GitHub, Inc.
+
