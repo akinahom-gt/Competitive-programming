@@ -4,12 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        l=len(nums)
+        
         ans=[]
         count=0
-        for i in nums:
-            for j in range(l):
-               if (nums[j]-i)<0:
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+               if j!=i and nums[j]< nums[i]:
                    count+=1
             ans.append(count)
             count=0
